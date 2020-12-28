@@ -1,0 +1,22 @@
+char* TooltipText(char* lpszPictureName, char* lpszObjectName, char* lpszPropertyName)
+{
+
+char* ToolTipAnzeigen;
+char* ToolTipText;
+
+ToolTipAnzeigen = GetPropBOOL(lpszPictureName,lpszObjectName,"ToolTip");
+ToolTipText = GetPropChar(lpszPictureName,lpszObjectName,"ToolTip_Text");
+
+//Überprüfen ob Tooltip gezeigt werden soll
+
+if (ToolTipAnzeigen)
+	{
+	return ToolTipText;
+	}
+
+if (!(ToolTipAnzeigen)
+	{
+	return 0;
+	}
+
+}
